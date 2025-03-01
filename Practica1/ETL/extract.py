@@ -3,7 +3,7 @@ import pandas as pd
 def extract():
 
     try:
-        dataframe = pd.read_csv("C:/Users/Juan Enrique/seminario2/lab/practica1/VuelosDataSet.csv")
+        dataframe = pd.read_csv("../VuelosDataSet.csv")
         print("\nCantidad de registros: ", len(dataframe))
 
         print("\nPrimeras 5 filas:")
