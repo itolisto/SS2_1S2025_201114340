@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.pivot_tables.sa"
+  DTS:DTSID="{98C57A51-84EA-4227-A027-3C0B5C92217B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=pivot_tables;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{98C57A51-84EA-4227-A027-3C0B5C92217B}localhost.pivot_tables.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYoi0jq72rEKxD2TKlPWIGwAAAAACAAAAAAAQZgAAAAEAACAAAADzk4zQrUsbKjQ8Vz1yl/vcgF12xD7Tbah8Nt00deh6tAAAAAAOgAAAAAIAACAAAADYjhV+ck9mYb1CSi2zQXxLjBYhwi2DdAxQtpAd/b6TC4AAAACfJS/zuGHAeAVwEcjlJK6lssfafvQWpDotEBipW5NvTmewpNbuSJHwYxGsqRT74C71to5xk2qEwvQnUJkpPRfTU94OSR6CfNg8YQvy13ICXAnYZFM3T7W4kx6BOuhODQTOiv5BaOtxj5V//a9mE+Z49QA975cGPiD1acvvYmXSjkAAAABDkb8sG3Ll+3pl9a5EnJxL2MBe2bECOxFrN+DTviSz9WZn6k9akrYTL0I4XtxzvJm8M3R1DUACq0589uwaXK9u</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
