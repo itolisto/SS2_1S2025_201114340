@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DataSourceSGFoodCompras">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString />
+  </ConnectionProperties>
+  <DataSourceID>4433f671-9b5f-4464-99cb-962004762aab</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Seminario</Id>
+            <Name>Seminario</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9wQuJo+RtUWKLPmRSXMVoAAAAAAUAAAAUwBlAG0AaQBuAGEAcgBpAG8AAAAQZgAAAAEAACAAAADIu+BW1wZU4aFIEoWTts/v9HV302ClhrH7qKDSuxD5fwAAAAAOgAAAAAIAACAAAAALdEQHfG4RxZetVP8S7c3Y/TX+JPeNoZZrb6UAOw2dcBAAAAB+J2genNKYLmQnKLlsMoX5QAAAAPAqKSQNiCPB1XoUpBSvVZueFp8J2DZAQY0e7EyjEGbniTvPs0o/6iHosdZ9yz54dfnhXUY1iDH9VIx14TCK6A0=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Seminario</Id>
+            <Name>Seminario</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9wQuJo+RtUWKLPmRSXMVoAAAAAAUAAAAUwBlAG0AaQBuAGEAcgBpAG8AAAAQZgAAAAEAACAAAAD7GgWDezPdjHz/vEJv4OUnvD/EJjX4+s39zBVmW0wIxwAAAAAOgAAAAAIAACAAAAAUQjCvsm2O0YdPtE0tx/NfObD8VXaeFf1XI98EvZYJmCAAAAAhRdUgtFzkLphiySO1rbqUW0MeHA5PnjE1mKy000Mx7kAAAABxr/oSPJ1bP1YhxdhYPqp9571Hqaf1c0673p+kfEjZP+sfB3MwwIpAp1ZqejeeY7wudA28EhXK+YbzG70+I/x4</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>proyecto_ssas</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSourceSGFood</DataSourceReference>
+      <CommandText> SELECT NON EMPTY { [Measures].[Unidades] } ON COLUMNS, NON EMPTY { ([DimSucursalCompras].[Id suc].[Id suc].ALLMEMBERS * [DimSucursalCompras].[suc_name].[suc_name].ALLMEMBERS * [DimSucursalCompras].[Region].[Region].ALLMEMBERS * [DimFechaCompra].[Anio].[Anio].ALLMEMBERS * [DimFechaCompra].[Mes].[Mes].ALLMEMBERS * [DimFechaCompra].[Id].[Id].ALLMEMBERS * [DimMarcaCompras].[name_marca].[name_marca].ALLMEMBERS * [DimProductoCompras].[nombre_prod].[nombre_prod].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [SeminarioCompras] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>MDX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimSucursalCompras</DimensionName>
+                    <HierarchyName>Id suc</HierarchyName>
+                    <HierarchyUniqueName>[DimSucursalCompras].[Id suc]</HierarchyUniqueName>
+                    <LevelName>Id suc</LevelName>
+                    <UniqueName>[DimSucursalCompras].[Id suc].[Id suc]</UniqueName>
+                  </ID>
+                  <ItemCaption>Id suc</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimSucursalCompras</DimensionName>
+                    <HierarchyName>suc_name</HierarchyName>
+                    <HierarchyUniqueName>[DimSucursalCompras].[suc_name]</HierarchyUniqueName>
+                    <LevelName>suc_name</LevelName>
+                    <UniqueName>[DimSucursalCompras].[suc_name].[suc_name]</UniqueName>
+                  </ID>
+                  <ItemCaption>suc_name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimSucursalCompras</DimensionName>
+                    <HierarchyName>Region</HierarchyName>
+                    <HierarchyUniqueName>[DimSucursalCompras].[Region]</HierarchyUniqueName>
+                    <LevelName>Region</LevelName>
+                    <UniqueName>[DimSucursalCompras].[Region].[Region]</UniqueName>
+                  </ID>
+                  <ItemCaption>Region</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimFechaCompra</DimensionName>
+                    <HierarchyName>Anio</HierarchyName>
+                    <HierarchyUniqueName>[DimFechaCompra].[Anio]</HierarchyUniqueName>
+                    <LevelName>Anio</LevelName>
+                    <UniqueName>[DimFechaCompra].[Anio].[Anio]</UniqueName>
+                  </ID>
+                  <ItemCaption>Anio</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimFechaCompra</DimensionName>
+                    <HierarchyName>Mes</HierarchyName>
+                    <HierarchyUniqueName>[DimFechaCompra].[Mes]</HierarchyUniqueName>
+                    <LevelName>Mes</LevelName>
+                    <UniqueName>[DimFechaCompra].[Mes].[Mes]</UniqueName>
+                  </ID>
+                  <ItemCaption>Mes</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimFechaCompra</DimensionName>
+                    <HierarchyName>Id</HierarchyName>
+                    <HierarchyUniqueName>[DimFechaCompra].[Id]</HierarchyUniqueName>
+                    <LevelName>Id</LevelName>
+                    <UniqueName>[DimFechaCompra].[Id].[Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimMarcaCompras</DimensionName>
+                    <HierarchyName>name_marca</HierarchyName>
+                    <HierarchyUniqueName>[DimMarcaCompras].[name_marca]</HierarchyUniqueName>
+                    <LevelName>name_marca</LevelName>
+                    <UniqueName>[DimMarcaCompras].[name_marca].[name_marca]</UniqueName>
+                  </ID>
+                  <ItemCaption>name_marca</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DimProductoCompras</DimensionName>
+                    <HierarchyName>nombre_prod</HierarchyName>
+                    <HierarchyUniqueName>[DimProductoCompras].[nombre_prod]</HierarchyUniqueName>
+                    <LevelName>nombre_prod</LevelName>
+                    <UniqueName>[DimProductoCompras].[nombre_prod].[nombre_prod]</UniqueName>
+                  </ID>
+                  <ItemCaption>nombre_prod</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Unidades</MeasureName>
+                    <UniqueName>[Measures].[Unidades]</UniqueName>
+                  </ID>
+                  <ItemCaption>Unidades</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>SeminarioCompras</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement> SELECT NON EMPTY { [Measures].[Unidades] } ON COLUMNS, NON EMPTY { ([DimSucursalCompras].[Id suc].[Id suc].ALLMEMBERS * [DimSucursalCompras].[suc_name].[suc_name].ALLMEMBERS * [DimSucursalCompras].[Region].[Region].ALLMEMBERS * [DimFechaCompra].[Anio].[Anio].ALLMEMBERS * [DimFechaCompra].[Mes].[Mes].ALLMEMBERS * [DimFechaCompra].[Id].[Id].ALLMEMBERS * [DimMarcaCompras].[name_marca].[name_marca].ALLMEMBERS * [DimProductoCompras].[nombre_prod].[nombre_prod].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [SeminarioCompras] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Id_suc">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimSucursalCompras].[Id suc].[Id suc]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="suc_name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimSucursalCompras].[suc_name].[suc_name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Region">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimSucursalCompras].[Region].[Region]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Anio">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimFechaCompra].[Anio].[Anio]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Mes">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimFechaCompra].[Mes].[Mes]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Id">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimFechaCompra].[Id].[Id]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="name_marca">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimMarcaCompras].[name_marca].[name_marca]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Unidades">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Measure" UniqueName="[Measures].[Unidades]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="nombre_prod">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Level" UniqueName="[DimProductoCompras].[nombre_prod].[nombre_prod]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
